@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: hot_tail_production
-  username: hot_tail
-  password: <%= ENV["HOT_TAIL_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
